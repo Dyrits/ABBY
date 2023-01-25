@@ -2,6 +2,13 @@
 @using AbbyWeb.Model
 @model AbbyWeb.Pages.Categories.Index
 
+@if(TempData["Success"] != null)
+{
+    <p class="alert alert-success" role="alert">
+        @TempData["Success"]
+    </p>
+}
+
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
