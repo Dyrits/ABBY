@@ -7,12 +7,29 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.35" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.35">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.35" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Abby.DataAccess\Abby.DataAccess.csproj" />
+      <ProjectReference Include="..\Abby.Models\Abby.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Pages\Admin\" />
+      <Folder Include="Pages\Customer\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Pages\Admin\Categories\Create.cshtml" />
+      <AdditionalFiles Include="Pages\Admin\Categories\Delete.cshtml" />
+      <AdditionalFiles Include="Pages\Admin\Categories\Edit.cshtml" />
+      <AdditionalFiles Include="Pages\Admin\Categories\Index.cshtml" />
     </ItemGroup>
 
 </Project>
